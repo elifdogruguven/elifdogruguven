@@ -1,0 +1,243 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "kernelspec": {
+      "display_name": "Python 3",
+      "language": "python",
+      "name": "python3"
+    },
+    "language_info": {
+      "codemirror_mode": {
+        "name": "ipython",
+        "version": 3
+      },
+      "file_extension": ".py",
+      "mimetype": "text/x-python",
+      "name": "python",
+      "nbconvert_exporter": "python",
+      "pygments_lexer": "ipython3",
+      "version": "3.7.6"
+    },
+    "colab": {
+      "provenance": [],
+      "collapsed_sections": [],
+      "include_colab_link": true
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/elifdogruguven/elifdogruguven/blob/main/Python_Bootcamp_Graded_Hands_on_Exercise_ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "A8yCrhVHQ_lC"
+      },
+      "source": [
+        "##Overview\n",
+        "\n",
+        "Dear Learner, \n",
+        "\n",
+        "Congratulations, you have studied Python all the way through the end of this bootcamp!!! This is the final graded hands-on exercise where you will be accomplishing the below mentioned task.\n",
+        "\n",
+        "Authors: Albana Celepija, Vinayak Deshpande"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "y_B39vCQGRTH"
+      },
+      "source": [
+        "###Task 1\n",
+        "\n",
+        "We have declared a tuple containing five same elements as following:\n",
+        "T = (‘python’, ‘python’, ‘python’, ‘python’, ‘python’).\n",
+        "Re-write the same code in an optimal/simple way that fetches the same result."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "T= ('python '*5)\n",
+        "print(T)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "6BhgTiayZzan",
+        "outputId": "8d674284-b3a9-4d5b-b7f4-c43366f2a434"
+      },
+      "execution_count": 53,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "python python python python python \n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "H_8tFcijGRTQ"
+      },
+      "source": [
+        "###Task 2\n",
+        "\n",
+        "Write code to print characters from a string that are present at an even index number.\n",
+        "For example, if your input string is \"python\", the output characters will be (p,t,o)."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a= 'SUCCESS'\n",
+        "print(a[0],a[2],a[4])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "2XtO08BAZ_qK",
+        "outputId": "9b6e3ff9-4f79-4bfd-f508-c990fa6574fb"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "S C E\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "FbLVbwcsGRTT"
+      },
+      "source": [
+        "### Task 3\n",
+        "\n",
+        "Write a function that calculates the average of the elements of the list: \n",
+        "\n",
+        "elements = [5, 7, 4, 9, 2]\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "elements=[5,7,4,9,2]\n",
+        "def avg():\n",
+        "  print(sum(elements)/5)\n",
+        "avg()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "5e3fXpOjadTs",
+        "outputId": "40650ba9-459e-4dfe-807a-2c60b41dbc5f"
+      },
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "5.4\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "2pzfM3wS4oqt"
+      },
+      "source": [
+        "### Task 4\n",
+        "Write a code that takes a year as input and determines whether it is a leap year or not."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "year=int(input('Enter year : '))\n",
+        " \n",
+        "if(year%4 == 0 and year%100 != 0) or (year%400 == 0):\n",
+        "    print(year, \"is a leap year\")\n",
+        "else:\n",
+        "    print(year, \"is not a leap year\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "9_P6GDEYb8CY",
+        "outputId": "6f1cfcd1-f1ca-49e8-a71f-05305e1dafe3"
+      },
+      "execution_count": 24,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter year : 2020\n",
+            "2020 is a leap year\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "zsVw9yrD5drx"
+      },
+      "source": [
+        "### Task 5\n",
+        "Given a list of numbers (integers), find the sum of second maximum and second minimum in the following list.\n",
+        "\n",
+        "l = [21, 6, 12, 57, 35, 61]"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "I=[21,6,12,57,35,61]\n",
+        "I.sort()\n",
+        "print(I[-2]+I[1])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "KpzM8jN9cesH",
+        "outputId": "076fad78-1b21-4b9e-a79d-c6a417508bd4"
+      },
+      "execution_count": 43,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "69\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
